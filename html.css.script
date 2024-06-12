@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fonksiyon()">Click Me</button>
+    <script>
+        //değer almadan  çalışan fonksiyon değer vermiyoruz
+        function fonksiyon(){}
+        //değer almadan çalışan fonksiyon
+        function fonksiyon1(){
+            alert("Merhaba");
+        }
+        //fonksiyon1
+        //değer alan fonksiyon alınan değerleri toplar
+        function fonksiyon2(a , b){
+            alert(a + b);
+        }
+        //değer alan fonksiyon alınan değerleri toplar ve döndürür
+        function fonksiyon3(a , b){
+            return a + b;
+        }
+        //alert(fonksiyon3(2 ,2));
+        //dışardan değer alan ve içerde bizim belirlediğimiz değeride veren fonksiyon
+        function fonksiyon4(isim){
+            return "merhaba" + isim;
+        }
+        alert(fonksiyon4("Ahmet"));
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array kullanımı
+        var array=["Ahmet","Mehmet","Ali","Veli"];//array tanımlama
+        let array2=["Ahmet","Mehmet","Ali","Veli"];//array tanımlama
+        array.push("hasan");//array sonuna eleman ekleme
+        array.unshift("Hüseyin");//array başına eleman ekleme
+        array.pop();//array sonundan eleman silme
+        array.shift();//array başından eleman silme
+        //array içindeki elemanları yazdırma
+        for (let i = 0; i < array.length;i++ ){
+            console.log(array[i]);
+        }
+        var sayilar = [1,2,3,4,5,6,7,8,9,10];
+        //sayılar içindeki elemanları filtreleme
+        var yenisayilar = sayilar.filter(function (sayi){
+            return sayi  >5;
+        });
+        console.log(yenisayilar);
+        //array  map kullanımı
+        var sayilar2 = [1,2,3,4,5,6,7,8,9,10];
+        var yenisayilar2 = sayilar2.map(function(sayi){
+            return sayi * 2;
+        });
+        console.log(yenisayilar2);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
